@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
 
 import javafx.scene.control.Label;
-
+import javafx.scene.input.MouseEvent;
 import javafx.scene.control.ComboBox;
 
 public class ColorsController {
@@ -27,6 +27,12 @@ public class ColorsController {
 	private Label color2;
 	@FXML
 	private Label color3;
+
+	// Event Listener on ComboBox[#selectorIdioma].onAction
+	@FXML
+	public void seleccionarIdioma(MouseEvent event) {
+		selectorIdioma.getItems().addAll("castella", "nom", "angles", "frances");
+	}
 
 	// Event Listener on Button[#busquedaColor].onAction
 	@FXML
