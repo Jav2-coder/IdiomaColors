@@ -20,6 +20,7 @@ public class App extends Application {
 			primaryStage.setTitle("Colors");
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			Class.forName("com.mysql.jdbc.Driver");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

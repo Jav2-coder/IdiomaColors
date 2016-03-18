@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.javierjimenez.Colors.ColorsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.javierjimenez.Colors.ColorController">
    <center>
       <GridPane prefHeight="449.0" prefWidth="600.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -22,7 +22,7 @@
           <RowConstraints maxHeight="361.0" minHeight="10.0" prefHeight="195.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ComboBox fx:id="selectorIdioma" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#seleccionarIdioma" prefHeight="26.0" prefWidth="150.0" promptText="Elegir idioma" GridPane.columnIndex="1">
+            <ComboBox fx:id="selectorIdioma" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#seleccionarIdioma" prefHeight="26.0" prefWidth="167.0" promptText="Elegir idioma" GridPane.columnIndex="1">
                <GridPane.margin>
                   <Insets left="25.0" top="-70.0" />
                </GridPane.margin>
@@ -32,11 +32,6 @@
                   <Insets left="25.0" top="-70.0" />
                </GridPane.margin>
             </Button>
-            <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="256.0">
-               <GridPane.margin>
-                  <Insets left="124.0" top="-70.0" />
-               </GridPane.margin>
-            </TextField>
             <Label fx:id="color1" prefHeight="18.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: black;" text=" " GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets bottom="145.0" left="155.0" />
@@ -67,6 +62,11 @@
                   <Insets left="155.0" top="90.0" />
                </GridPane.margin>
             </Label>
+            <TextField fx:id="textIdioma" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="245.0">
+               <GridPane.margin>
+                  <Insets left="139.0" top="-70.0" />
+               </GridPane.margin>
+            </TextField>
          </children>
       </GridPane>
    </center>
